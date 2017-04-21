@@ -5,6 +5,10 @@ MAINTAINER Trinh Phuoc Thai <tphuocthai@gmail.com>
 ENV DOCKERIZE_VERSION v0.3.0
 RUN curl -L https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-${DOCKERIZE_VERSION}.tar.gz | tar zx -C /usr/bin
 
+# Timezone
+ENV TZ=Asia/Ho_Chi_Minh
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
