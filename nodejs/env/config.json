@@ -1,0 +1,6 @@
+{
+    "MYSQL_USER": "root",
+    "MYSQL_PASSWORD": "",
+    "MYSQL_DATABASE": "timezone_test",
+    "MYSQL_HOST": "localhost"
+}

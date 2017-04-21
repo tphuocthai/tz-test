@@ -1,0 +1,15 @@
+version: "2"
+services:
+  mysql:
+    image: mysql
+    env_file:
+      - config.env
+
+  app:
+    build: ./nodejs
+    links:
+      - mysql
+    env_file:
+      - config.env
+    ports:
+      - 8080:8080

@@ -1,0 +1,18 @@
+{
+  "name": "timezone",
+  "version": "1.0.0",
+  "description": "Test timezone for different server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "author": "Trinh Phuoc Thai <tphuocthai@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "nconf": "^0.8.4"
+  }
+}
