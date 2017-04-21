@@ -10,6 +10,7 @@ let opts = {
   user: nconf.get('MYSQL_USER'),
   password: nconf.get('MYSQL_PASSWORD'),
   database: nconf.get('MYSQL_DATABASE'),
+  timezone: 'UTC',
   multipleStatements: true
 };
 
